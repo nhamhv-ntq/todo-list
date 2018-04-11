@@ -141,7 +141,7 @@ document.getElementById('clear-todos').addEventListener('click', clearToDos, fal
 document.getElementById('btn-submit').addEventListener('click', validateToDo, false);
 
 itemInput.onkeydown = function(event) {
-  if(event.keyCode === '13') {
+  if(event.keyCode === 13) {
     validateToDo(event);
     return false;
   }
